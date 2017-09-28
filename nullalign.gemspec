@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.homepage    = "http://github.com/tcopeland/nullalign"
   s.summary     = %q{A tool to detect missing non-null constraints}
   s.description = <<-EOF
-If you have a validates_presence_of, you'll probably want a
+If you have a presence validation, you'll probably want a
 non-null constraint to go with it.
 EOF
   s.license = "MIT"
