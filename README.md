@@ -12,6 +12,18 @@ Do you have a non-null constraint in your database to back that up?  If not, nul
 
 Nullalign is based on Colin Jones' [consistency_fail](https://github.com/trptcolin/consistency_fail).  I mean really really based on it, as in I copied and pasted over a bunch of the code and changed the module and file names.  And a lot of this README, too.
 
+## Installation
+
+Put this in the `development` group in your `Gemfile`
+
+    gem 'nullalign'
+
+## Usage
+
+Run it like this:
+
+    bundle exec nullalign
+
 ## Example output
 
     There are presence validators that aren't backed by non-null constraints.
@@ -22,12 +34,6 @@ Nullalign is based on Colin Jones' [consistency_fail](https://github.com/trptcol
     Album              albums: name, owner_id
     AttendanceRecord   attendance_records: group_id, attended_at
     AttendanceRecord   attendance_records: group_id, attended_at
-
-## Installation
-
-Put this in the `development` group in your `Gemfile`
-
-    gem 'nullalign'
 
 ## Limitations
 
