@@ -31,9 +31,9 @@ Run it like this:
     Model              Table Columns
     --------------------------------------------------------------------------------
     Album              albums: name, owner_id
-    Album              albums: name, owner_id
     AttendanceRecord   attendance_records: group_id, attended_at
-    AttendanceRecord   attendance_records: group_id, attended_at
+    CheckinLabel       checkin_labels: name, xml
+    CheckinTime        checkin_times: campus
 
 ## Limitations
 

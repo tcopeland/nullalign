@@ -67,10 +67,8 @@ module Nullalign
           report_failure_header(macro, longest_model_length)
 
           null_constraints_by_table_name.each do |table_name, model, columns|
-            columns.each do |column|
-              print model.name.ljust(longest_model_length + 2)
-              puts column.table_name + ": " + columns.map {|x| x.column }.join(', ')
-            end
+            print model.name.ljust(longest_model_length + 2)
+            puts columns.first.table_name + ": " + columns.map {|x| x.column }.join(', ')
           end
           divider(longest_model_length * 2)
         end
