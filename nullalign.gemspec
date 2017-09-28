@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.version     = Nullalign::VERSION
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Tom Copeland"]
-  s.email       = ["tom@thomasleecopeland.com.com"]
+  s.email       = ["tom@thomasleecopeland.com"]
   s.homepage    = "http://github.com/tcopeland/nullalign"
   s.summary     = %q{A tool to detect missing non-null constraints}
   s.description = <<-EOF
