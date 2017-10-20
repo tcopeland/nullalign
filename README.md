@@ -47,6 +47,12 @@ or pull request if so!
 To disable nullalign, I could add a thing that checks column comments for a string
 like 'nonullalign' if people think that would be useful.  Just let me know.
 
+## Tests
+
+You can run the tests with:
+
+    bundle exec rspec
+
 ## License
 
 Released under the MIT License. See the LICENSE file for further details.
