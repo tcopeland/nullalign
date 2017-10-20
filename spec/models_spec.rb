@@ -37,14 +37,13 @@ describe Nullalign::Models do
   end
 
   it "gets all models" do
-    # TODO fails, but why?
-    # model_a = double(:name => "animal")
-    # model_b = double(:name => "cat")
-    # model_c = double(:name => "beach_ball")
-    #
-    # allow(ActiveRecord::Base).to receive(:send).with(:descendants).and_return([model_a, model_b, model_c])
-    #
-    # expect(models([]).all).to eq([model_a, model_c, model_b])
+    model_a = double(:name => "animal")
+    model_b = double(:name => "cat")
+    model_c = double(:name => "beach_ball")
+
+    allow(ActiveRecord::Base).to receive(:descendants).and_return([model_a, model_b, model_c])
+
+    expect(models([]).all).to eq([model_a, model_c, model_b])
   end
   
 end
