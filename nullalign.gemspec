@@ -16,7 +16,7 @@ non-null constraint to go with it.
 EOF
   s.license = "MIT"
 
-  s.add_development_dependency "activerecord", "~>4.0.0"
+  s.add_development_dependency "activerecord", "~>4.0"
   s.add_development_dependency "sqlite3", "~>1.3"
   s.add_development_dependency "rspec", "~>3.2"
 
