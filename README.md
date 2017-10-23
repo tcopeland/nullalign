@@ -47,6 +47,11 @@ or pull request if so!
 To disable nullalign, I could add a thing that checks column comments for a string
 like 'nonullalign' if people think that would be useful.  Just let me know.
 
+## Contributors
+
+* [Tom Copeland](https://thomasleecopeland.com) - author
+* [Woongcheol Yang](https://github.com/woongy) - support for conditional validations
+
 ## Tests
 
 You can run the tests with:
