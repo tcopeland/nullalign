@@ -19,6 +19,18 @@ describe Nullalign::Introspectors::ValidatesPresenceOf do
       expect(subject.missing_nonnull_constraints(CorrectAccount)).to be_empty
     end
 
+    it 'finds none if there is an if condition' do
+      expect(subject.missing_nonnull_constraints(WithIfAccount)).to be_empty
+    end
+
+    it 'finds none if there is an on condition' do
+      expect(subject.missing_nonnull_constraints(WithOnAccount)).to be_empty
+    end
+
+    it 'finds none if there is an unless condition' do
+      expect(subject.missing_nonnull_constraints(WithUnlessAccount)).to be_empty
+    end
+
   end
 
 end

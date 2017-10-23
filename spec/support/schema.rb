@@ -11,6 +11,21 @@ ActiveRecord::Schema.define(version: 0) do
     t.timestamps
   end
 
+  create_table :with_if_accounts do |t|
+    t.string :email
+    t.timestamps
+  end
+
+  create_table :with_on_accounts do |t|
+    t.string :email
+    t.timestamps
+  end
+
+  create_table :with_unless_accounts do |t|
+    t.string :email
+    t.timestamps
+  end
+
   execute 'CREATE VIEW new_correct_people AS '\
           'SELECT * FROM correct_people '\
           'WHERE created_at = updated_at'
