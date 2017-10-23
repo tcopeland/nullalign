@@ -5,7 +5,7 @@ module Nullalign
     class ValidatesPresenceOf
       def instances(model)
         model.validators.select do |v|
-          v.class == ActiveRecord::Validations::PresenceValidator
+          v.class == ActiveRecord::Validations::PresenceValidator && (v.options.keys & %i(on if unless)).empty?
         end
       end
 
