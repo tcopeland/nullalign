@@ -35,6 +35,12 @@ Run it like this:
     CheckinLabel       checkin_labels: name, xml
     CheckinTime        checkin_times: campus
 
+## Generating a migration
+
+You can also run a Rake task which will generate a migration which will add indexes as needed:
+
+    bundle exec rake nullalign:fix
+
 ## Limitations
 
 nullalign depends on being able to find all your `ActiveRecord::Base`
@@ -51,6 +57,7 @@ like 'nonullalign' if people think that would be useful.  Just let me know.
 
 * [Tom Copeland](https://thomasleecopeland.com) - author
 * [Woongcheol Yang](https://github.com/woongy) - support for conditional validations
+* [Paweł Dąbrowski](https://twitter.com/pdabrowski_k1) - Rake task suggestion
 
 ## Tests
 
