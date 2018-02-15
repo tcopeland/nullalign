@@ -1,6 +1,6 @@
 # Changelog
 
-## v0.0.3 Feb ? 2018
+## v0.0.3 Feb 14 2018
 * Add nullalign:fix Rake task
 
 ## v0.0.2 Oct 23 2017
