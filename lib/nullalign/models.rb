@@ -3,6 +3,7 @@ require 'active_record'
 module Nullalign
   class Models
     MODEL_DIRECTORY_REGEXP = /models/
+    IGNORE_DIRECTORY_REGEXP = /activestorage-\S*\/app\/models/
 
     attr_reader :load_path
 
@@ -11,7 +12,7 @@ module Nullalign
     end
 
     def dirs
-      load_path.select { |lp| MODEL_DIRECTORY_REGEXP =~ lp.to_s }
+      load_path.select { |lp| MODEL_DIRECTORY_REGEXP =~ lp.to_s unless IGNORE_DIRECTORY_REGEXP =~ lp.to_s}
     end
 
     def preload_all
