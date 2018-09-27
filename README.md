@@ -56,6 +56,7 @@ like 'nonullalign' if people think that would be useful.  Just let me know.
 ## Contributors
 
 * [Tom Copeland](https://thomasleecopeland.com) - author
+* [Denny Mueller](https://github.com/dennym) - fix for ActiveStorage compatibility issue
 * [Woongcheol Yang](https://github.com/woongy) - support for conditional validations
 * [Paweł Dąbrowski](https://twitter.com/pdabrowski_k1) - Rake task suggestion
 
